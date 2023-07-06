@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar usuario</title>
+    <link href="{% static 'css/estilos.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Formulario para crear usuario</h1>
+    <form>
+        <label>Nombre</label>
+        <input type="text" />
+        <br>
+        <label>Apellido</label>
+        <input type="text" />
+        <br>
+        <button>Registrar</button>
+    </form>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>Apellidos</td>
+                <td>Nombres</td>
+                <td>Operaciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Ruben</td>
+                <td>Chaname</td>
+                <td>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Siaden</td>
+                <td>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="{% static 'js/funciones.js' %}"></script>
+</body>
+
+</html>
